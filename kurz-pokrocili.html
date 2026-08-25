@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Osobní rozvoj pro pokročilé s&nbsp;AKD | Hojivé Místečko</title>
+  <meta name="description" content="Kurz osobního rozvoje pro pokročilé s Automatickou kresbou diagnostickou. Hluboká integrace, mistrovství, 7denní aktivace barev online a praktické tréninky v Berouně.">
+  <link rel="canonical" href="https://hojivemistecko.cz/kurz-pokrocili.html">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cookie Bar -->
+  <div id="cookieBar" class="cookie-bar hidden">
+    <p>Tento web používá soubory cookies pro zajištění správné funkčnosti a&nbsp;základní analýzu návštěvnosti.</p>
+    <div class="cookie-actions">
+      <button id="cookieAccept" class="cookie-btn cookie-accept">Přijmout</button>
+      <button id="cookieReject" class="cookie-btn cookie-reject">Odmítnout</button>
+      <button id="cookieSettings" class="cookie-btn cookie-settings">Nastavení</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Hojivé Místečko úvodní stránka">
+        <div class="logo-badge">HM</div>
+        <span>HOJIVÉ MÍSTEČKO</span>
+      </a>
+
+      <button id="mobileToggle" class="mobile-toggle" aria-label="Otevřít menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="index.html" class="nav-link">Domů</a></li>
+        <li class="nav-item-dropdown">
+          <a href="o-kurzech.html" class="nav-link dropdown-toggle active">
+            Kurzy AKD <i class="fas fa-chevron-down" style="font-size: 0.75em; margin-left: 4px;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="o-kurzech.html" class="dropdown-item">Přehled všech kurzů</a></li>
+            <li><a href="kurz-zacatecnici.html" class="dropdown-item">Pro začátečníky</a></li>
+            <li><a href="kurz-pokrocili.html" class="dropdown-item active">Pro pokročilé</a></li>
+            <li><a href="kurz-osobni-vedeni.html" class="dropdown-item">Osobní vedení</a></li>
+          </ul>
+        </li>
+        <li><a href="ebook.html" class="nav-link">E-book</a></li>
+        <li><a href="o-mne.html" class="nav-link">O mně</a></li>
+        <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        <li><a href="o-kurzech.html#moje-kurzy" class="btn btn-accent" style="padding: 8px 20px; font-size: 0.88rem;">Chci kurz</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero / Header Section -->
+  <section class="section-padding" style="background-color: var(--bg-alt); text-align: center; padding-top: var(--space-8); padding-bottom: var(--space-7);">
+    <div class="container">
+      <div style="max-width: 860px; margin: 0 auto;">
+        <span style="display: inline-block; background: rgba(54, 182, 177, 0.15); color: var(--primary-dark); font-weight: 600; padding: 6px 18px; border-radius: 20px; font-size: 0.95rem; margin-bottom: 16px;">
+          HLUBOKÁ INTEGRACE A&nbsp;MISTROVSTVÍ
+        </span>
+        <h1 style="color: var(--primary-dark); font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 16px; font-weight: 700;">
+          Osobní rozvoj pro pokročilé
+        </h1>
+        <p style="margin: 0 auto; font-size: 1.15rem; line-height: 1.7; color: var(--text-main); max-width: none;">
+          Postupte od základního odhalení k&nbsp;hluboké integraci, mistrovství a&nbsp;vědomému tvoření vlastního života.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section-padding" style="background-color: var(--bg-main);">
+    <div class="container">
+      <div style="max-width: 900px; margin: 0 auto;">
+
+        <!-- Back Link -->
+        <a href="o-kurzech.html#moje-kurzy" style="display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 600; text-decoration: none; margin-bottom: 32px;">
+          <i class="fas fa-arrow-left"></i> Zpět na přehled všech kurzů
+        </a>
+
+        <!-- Intro Banner (Borderless card) -->
+        <div style="background: rgba(54, 182, 177, 0.08); padding: 32px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); margin-bottom: 36px;">
+          <h3 style="color: var(--primary-dark); font-size: 1.35rem; margin-bottom: 14px; font-weight: 700;">
+            Kurz pro pokročilé navazuje na základní kurz pro začátečníky.
+          </h3>
+          <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main); margin-bottom: 16px; max-width: none;">
+            Postoupíme k&nbsp;hlubší integraci a&nbsp;tvorbě vlastní reality. Už neztrácíme čas neustálým rozebíráním minulosti – učíme se využívat AKD jako spolehlivý kompas v&nbsp;přítomném okamžiku.
+          </p>
+          <p style="font-size: 1.05rem; line-height: 1.7; color: var(--primary-dark); font-weight: 600; margin: 0; max-width: none;">
+            Automatická kresba se pro vás stane okamžitým obrazem skutečné podstaty situace a&nbsp;vaše rozhodování získá čisté vnitřní vědomí.
+          </p>
+        </div>
+
+        <!-- Phase 1 Card (Borderless card) -->
+        <div style="background: #ffffff; border-radius: var(--radius-md); padding: 36px; box-shadow: var(--shadow-sm); margin-bottom: 32px;">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+            <div style="width: 50px; height: 50px; background: rgba(54, 182, 177, 0.12); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
+              <i class="fas fa-satellite-dish"></i>
+            </div>
+            <div>
+              <span style="color: var(--accent); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">ONLINE PŘÍPRAVA & 7DENNÍ VYSÍLÁNÍ</span>
+              <h2 style="color: var(--primary-dark); font-size: 1.5rem; margin: 4px 0 0;">Fáze 1: Úvod a&nbsp;aktivace barev</h2>
+            </div>
+          </div>
+
+          <div style="display: grid; gap: 20px; color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">
+            
+            <div style="background: var(--bg-alt); padding: 20px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+              <strong style="color: var(--primary-dark); display: block; font-size: 1.1rem; margin-bottom: 8px;">Úvodní setkání na Zoomu:</strong>
+              <span style="max-width: none; display: block;">Společně odstartujeme kurz online. Naučím vás krátkou zklidňující třídechou meditaci pro emoce i&nbsp;mysl a&nbsp;domluvíme si přesný čas pravidelného večerního vysílání.</span>
+            </div>
+
+            <div style="background: var(--bg-alt); padding: 20px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+              <strong style="color: var(--primary-dark); display: block; font-size: 1.1rem; margin-bottom: 8px;">7denní vysílání aktivace barev:</strong>
+              <span style="max-width: none; display: block;">Každá barva získá hloubkový hodinový blok. Detailně projdeme význam zakřivení tahů, tlaku pastelek, směrů kresby i&nbsp;chybějících barev z&nbsp;pohledu AKD.</span>
+            </div>
+
+            <div style="background: var(--bg-alt); padding: 20px 24px; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+              <strong style="color: var(--primary-dark); display: block; font-size: 1.1rem; margin-bottom: 8px;">Dotazy a&nbsp;kompletní záznamy:</strong>
+              <span style="max-width: none; display: block;">Při živém vysílání ihned zodpovím vaše dotazy. Všechna vysílání budete mít k&nbsp;dispozici v&nbsp;archivu v&nbsp;podobě videozáznamů.</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Phase 2 Card (Borderless card) -->
+        <div style="background: #ffffff; border-radius: var(--radius-md); padding: 36px; box-shadow: var(--shadow-sm); margin-bottom: 40px;">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+            <div style="width: 50px; height: 50px; background: rgba(54, 182, 177, 0.12); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
+              <i class="fas fa-street-view"></i>
+            </div>
+            <div>
+              <span style="color: var(--accent); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">OSOBNÍ TRÉNINK V&nbsp;BEROUNĚ</span>
+              <h2 style="color: var(--primary-dark); font-size: 1.5rem; margin: 4px 0 0;">2. Fáze: Praktické tréninky v&nbsp;Berouně</h2>
+            </div>
+          </div>
+
+          <div style="color: var(--text-main); font-size: 1.05rem; line-height: 1.7;">
+            <p style="background: var(--bg-alt); padding: 16px 20px; border-radius: var(--radius-sm); font-weight: 600; margin-bottom: 20px; max-width: none;">
+              <i class="fas fa-location-dot" style="color: var(--accent); margin-right: 8px;"></i> Místo konání: Na Černém vršku 559, Beroun.
+            </p>
+            
+            <p style="margin-bottom: 20px; max-width: none;">
+              Osobní tréninky probíhají v&nbsp;Berouně. Témata se přirozeně odvíjejí od vašich pokročilých potřeb – oproti začátečníkům jdeme do nesrovnatelně větší hloubky a&nbsp;praktického mistrovství.
+            </p>
+
+            <!-- Comparison Box inside Phase 2 (Clean borderless design) -->
+            <div style="background: rgba(54, 182, 177, 0.08); padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); margin-bottom: 32px;">
+              <h3 style="color: var(--primary-dark); font-size: 1.25rem; font-weight: 700; margin-top: 0; margin-bottom: 16px; text-align: center;">
+                V&nbsp;čem se kurz pro pokročilé liší od začátečníků?
+              </h3>
+
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
+                <div style="background: #ffffff; padding: 20px; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+                  <strong style="color: #c0392b; display: block; font-size: 1.05rem; margin-bottom: 6px; font-weight: 700;">
+                    <i class="fas fa-seedling" style="margin-right: 6px;"></i> Začátečníci se učili:
+                  </strong>
+                  <span style="font-size: 0.98rem; line-height: 1.6; color: var(--text-main); display: block;">
+                    Pojmenovat vnitřní bloky, odhalit staré vzorce chování a&nbsp;zvládnout základy AKD pro rychlou úlevu od tlaku.
+                  </span>
+                </div>
+
+                <div style="background: #ffffff; padding: 20px; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm);">
+                  <strong style="color: var(--primary-dark); display: block; font-size: 1.05rem; margin-bottom: 6px; font-weight: 700;">
+                    <i class="fas fa-crown" style="color: var(--accent); margin-right: 6px;"></i> Pokročilí se naučí:
+                  </strong>
+                  <span style="font-size: 0.98rem; line-height: 1.6; color: var(--text-main); display: block;">
+                    Neztrácet čas neustálým rozebíráním minulosti. Soustředíme se na přítomnost a&nbsp;vědomou tvorbu budoucnosti. Udržíte si vnitřní stabilitu v&nbsp;krizích a&nbsp;použijete AKD jako denní restart.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Prominent 4 Thematic Blocks Box -->
+            <div style="background: linear-gradient(135deg, #1B5E5B, #247D79); border-radius: var(--radius-lg); padding: 40px 32px; box-shadow: var(--shadow-lg); color: #ffffff; margin-top: 32px;">
+              <div style="text-align: center; margin-bottom: 28px;">
+                <span style="background: rgba(255, 255, 255, 0.15); color: #ffffff; padding: 6px 18px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">HLAVNÍ NÁPLŇ TRÉNINKŮ</span>
+                <h3 style="color: #ffffff; font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 700; margin-top: 12px; margin-bottom: 0;">
+                  Obsah 4 tréninků pro POKROČILÉ:
+                </h3>
+              </div>
+
+              <div style="display: grid; gap: 20px;">
+                
+                <!-- Block 1 -->
+                <div style="background: #ffffff; color: var(--text-main); padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                  <h4 style="color: var(--primary-dark); font-size: 1.25rem; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 12px;">
+                    <span style="background: var(--accent); color: #ffffff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; flex-shrink: 0;">1</span>
+                    Pevné osobní hranice v&nbsp;praxi
+                  </h4>
+                  <p style="margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                    Naučíte se postavit sama sebe na první místo ve vztazích i&nbsp;v&nbsp;práci. Rychle zmapujete, kde vám utíká energie, a&nbsp;získáte jistotu říkat jasné „ne“ bez výčitek svědomí.
+                  </p>
+                </div>
+
+                <!-- Block 2 -->
+                <div style="background: #ffffff; color: var(--text-main); padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                  <h4 style="color: var(--primary-dark); font-size: 1.25rem; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 12px;">
+                    <span style="background: var(--accent); color: #ffffff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; flex-shrink: 0;">2</span>
+                    Odstranění skrytých vzorců
+                  </h4>
+                  <p style="margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                    Půjdeme k&nbsp;podstatě hlubokých rodinných a&nbsp;společenských programů, které blokují váš úspěch a&nbsp;finance. Přenastavíte je na trvalé programy osobní síly a&nbsp;stability.
+                  </p>
+                </div>
+
+                <!-- Block 3 -->
+                <div style="background: #ffffff; color: var(--text-main); padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                  <h4 style="color: var(--primary-dark); font-size: 1.25rem; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 12px;">
+                    <span style="background: var(--accent); color: #ffffff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; flex-shrink: 0;">3</span>
+                    Dosahování cílů s&nbsp;lehkostí
+                  </h4>
+                  <p style="margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                    Naučíte se skrze kresbu přesně projektovat svoje cíle (vztahy, práce, zdraví). Rozpoznáte rozdíl mezi snahou ega a&nbsp;přirozeným vnitřním vedením bez zbytečné křeče.
+                  </p>
+                </div>
+
+                <!-- Block 4 -->
+                <div style="background: #ffffff; color: var(--text-main); padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm);">
+                  <h4 style="color: var(--primary-dark); font-size: 1.25rem; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 12px;">
+                    <span style="background: var(--accent); color: #ffffff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; flex-shrink: 0;">4</span>
+                    Mentální odolnost a&nbsp;vnitřní klid
+                  </h4>
+                  <p style="margin: 0 0 10px; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                    Ukotvíte stav vnitřní stability, kterou nerozhází stres ani chaos vnějšího světa. AKD se stane vaším rychlým nástrojem denní hygieny vnitřního světa.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Bonus Section -->
+        <div style="background: #ffffff; border-radius: var(--radius-md); padding: 36px; box-shadow: var(--shadow-md); margin-bottom: 40px; margin-top: 40px;">
+          <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 20px;">
+            <div style="width: 50px; height: 50px; background: rgba(54, 182, 177, 0.15); color: var(--primary-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
+              <i class="fas fa-gift"></i>
+            </div>
+            <div>
+              <span style="background: var(--accent); color: #ffffff; font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; text-transform: uppercase; letter-spacing: 1px;">EXKLUZIVNÍ BONUS PRO POKROČILÉ</span>
+              <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin: 6px 0 0; font-weight: 700;">
+                Systém 4 osobních konzultací v&nbsp;ceně
+              </h3>
+            </div>
+          </div>
+
+          <div style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
+            <div style="background: var(--bg-alt); padding: 18px 20px; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); font-weight: 600; color: var(--primary-dark); margin-bottom: 20px;">
+              <i class="fas fa-user-check" style="color: var(--accent); margin-right: 8px;"></i>
+              4 bezplatné individuální konzultace jako pevná součást vašeho růstu (spojení do&nbsp;7&nbsp;dnů po každém bloku)
+            </div>
+
+            <p style="margin-bottom: 16px; max-width: none;">
+              Jako bonus získáváte <strong>4 bezplatné individuální konzultace</strong>. Po úspěšném dokončení každého ze 4 hlavních tréninkových bloků se do&nbsp;7&nbsp;dnů osobně spojíme.
+            </p>
+
+            <p style="margin: 0; max-width: none;">
+              Tento intenzivní způsob vedení zajistí, že okamžitě vyjasníme vaše otázky a&nbsp;udržíte si trvalý posun v&nbsp;praxi.
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA Box -->
+        <div style="background: var(--primary-dark); border-radius: var(--radius-md); padding: 40px; text-align: center; color: #ffffff;">
+          <h3 style="color: #ffffff; font-size: 1.8rem; margin-bottom: 12px; font-weight: 700;">
+            Chcete se posunout na úroveň pokročilých?
+          </h3>
+          <p style="color: var(--accent-light); font-size: 1.1rem; max-width: 600px; margin: 0 auto 28px;">
+            Rezervujte si své místo v&nbsp;kurzu pro pokročilé a&nbsp;otevřete si dveře k&nbsp;mistrovskému řízení vlastního života.
+          </p>
+          <a href="kontakt.html" class="btn btn-accent" style="padding: 16px 36px; font-size: 1.05rem;">MÁM ZÁJEM O&nbsp;KURZ PRO POKROČILÉ</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="margin-bottom: var(--space-4);">
+            <div class="logo-badge">HM</div>
+            <span>HOJIVÉ MÍSTEČKO</span>
+          </div>
+          <p style="font-size: 0.88rem; margin-bottom: 12px; line-height: 1.6;">
+            Kurz „Kdo jsem“ je duševním majetkem firmy JM-občansko-správní poradenství. Firma JM občansko-správní poradenství je organizátorem kurzu rozvoje sebepojetí „Kdo jsem“ Automatickou kresbou diagnostickou metodou JIH®.
+          </p>
+          <p style="font-size: 0.88rem; line-height: 1.6;">
+            Firma JM občansko-správní poradenství spol. s&nbsp;r.o. mimo jiné šíří laické veřejnosti znalosti právního světa formou, která je snadno srozumitelná a&nbsp;oblíbená, na stránkách <a href="https://www.obcansko-spravni.cz" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: underline;">www.obcansko-spravni.cz</a> a&nbsp;<a href="https://www.ridicipokuty.cz" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: underline;">www.ridicipokuty.cz</a>.
+          </p>
+        </div>
+
+        <div>
+          <h4>Fakturační údaje organizátora</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6;">
+            <strong>JM občansko-správní poradenství spol. s&nbsp;r.o.</strong><br>
+            Sídlo: Na Černém vršku 559, Beroun<br>
+            IČO: 119 49 334<br>
+            Zapsaná v&nbsp;OR vedeného Městským soudem v&nbsp;Praze, oddíl C, vložka 356852.<br>
+            Živnostenské oprávnění pro poradenskou a&nbsp;konzultační činnost, pořádání kurzů, školení včetně lektorské činnosti.<br><br>
+            Číslo účtu: <strong>246123895/0600</strong>
+          </p>
+        </div>
+
+        <div>
+          <h4>Kontakt & Odkazy</h4>
+          <p style="font-size: 0.88rem; margin-bottom: 12px; line-height: 1.8;">
+            <strong>Mgr. Jiřina Jenčíková</strong><br>
+            <a href="mailto:jirinamerglova@seznam.cz" style="color: #ffffff; text-decoration: underline;">jirinamerglova@seznam.cz</a><br>
+            <a href="tel:+420607581660" style="color: #ffffff; text-decoration: underline;">+420 607 581 660</a>
+          </p>
+          <ul class="footer-links" style="margin-top: 12px;">
+            <li><a href="https://www.obcansko-spravni.cz" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: underline;">www.obcansko-spravni.cz</a></li>
+            <li><a href="https://www.ridicipokuty.cz" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: underline;">www.ridicipokuty.cz</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mgr. Jiřina Jenčíková – JM občansko-správní poradenství spol. s&nbsp;r.o.<br>Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-book „Kdo jsem“ s&nbsp;AKD | Textový průvodce osobním rozvojem</title>
+  <meta name="description" content="Stáhněte si e-book a textového průvodce pro kurz rozvoje sebepojetí »Kdo jsem« s Automatickou kresbou diagnostickou (AKD) od Mgr. Jiřiny Jenčíkové.">
+  <link rel="canonical" href="https://hojivemistecko.cz/ebook.html">
+  
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cookie Bar -->
+  <div id="cookieBar" class="cookie-bar hidden">
+    <p>Tento web používá soubory cookies pro zajištění správné funkčnosti a&nbsp;základní analýzu návštěvnosti.</p>
+    <div class="cookie-actions">
+      <button id="cookieAccept" class="cookie-btn cookie-accept">Přijmout</button>
+      <button id="cookieReject" class="cookie-btn cookie-reject">Odmítnout</button>
+      <button id="cookieSettings" class="cookie-btn cookie-settings">Nastavení</button>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="Hojivé Místečko úvodní stránka">
+        <div class="logo-badge">HM</div>
+        <span>HOJIVÉ MÍSTEČKO</span>
+      </a>
+
+      <button id="mobileToggle" class="mobile-toggle" aria-label="Otevřít menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <ul id="navMenu" class="nav-menu">
+        <li><a href="index.html" class="nav-link">Domů</a></li>
+        <li class="nav-item-dropdown">
+          <a href="o-kurzech.html" class="nav-link dropdown-toggle">
+            Kurzy AKD <i class="fas fa-chevron-down" style="font-size: 0.75em; margin-left: 4px;"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="o-kurzech.html" class="dropdown-item">Přehled všech kurzů</a></li>
+            <li><a href="kurz-zacatecnici.html" class="dropdown-item">Pro začátečníky</a></li>
+            <li><a href="kurz-pokrocili.html" class="dropdown-item">Pro pokročilé</a></li>
+            <li><a href="kurz-osobni-vedeni.html" class="dropdown-item">Osobní vedení</a></li>
+          </ul>
+        </li>
+        <li><a href="ebook.html" class="nav-link active">E-book</a></li>
+        <li><a href="o-mne.html" class="nav-link">O mně</a></li>
+        <li><a href="kontakt.html" class="nav-link">Kontakt</a></li>
+        <li><a href="#koupit-ebook" class="btn btn-accent" style="padding: 8px 20px; font-size: 0.88rem;">Koupit E-book</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero / Sales Banner -->
+  <section class="section-padding" style="background: linear-gradient(135deg, #1B5E5B, #247D79); color: #ffffff; padding-top: var(--space-8); padding-bottom: var(--space-7); position: relative; overflow: hidden;">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; align-items: center; max-width: 1000px; margin: 0 auto;">
+        
+        <!-- Left: Text & CTA -->
+        <div style="text-align: left;">
+          <span style="display: inline-block; background: rgba(255, 255, 255, 0.15); color: #ffffff; font-weight: 700; padding: 6px 18px; border-radius: 20px; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 16px;">
+            VZDĚLÁVACÍ SAMOOBSLUHA SEBEROZVOJE
+          </span>
+
+          <h1 style="color: #ffffff; font-size: clamp(2rem, 4vw, 2.8rem); margin-bottom: 16px; font-weight: 700; line-height: 1.25;">
+            Textový průvodce pro kurz & přednášku „Kdo jsem“
+          </h1>
+
+          <p style="margin-bottom: 24px; font-size: 1.15rem; line-height: 1.6; color: var(--accent-light); font-weight: 500; max-width: none;">
+            Praktický nástroj pro osobní rozvoj Automatickou kresbou diagnostickou (AKD) metodou J.I.H. ®.
+          </p>
+
+          <!-- Quote Box -->
+          <div style="background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); border-radius: var(--radius-md); padding: 20px 24px; margin-bottom: 24px; backdrop-filter: blur(8px);">
+            <p style="font-size: 1.05rem; line-height: 1.6; color: #ffffff; margin-bottom: 12px; font-style: italic; max-width: none;">
+              „Znáte toho, kdo rozhoduje o&nbsp;tom, jak se cítíte? Jste si jistí, že jste to vy?“
+            </p>
+            <div style="background: rgba(54, 182, 177, 0.3); border-radius: var(--radius-sm); padding: 10px 14px; font-weight: 700; font-size: 0.92rem; letter-spacing: 0.5px; color: #ffffff; text-transform: uppercase;">
+              Nástrojem je 7&nbsp;pastelek, čistý papír, ořezávátko a&nbsp;ticho.
+            </div>
+          </div>
+
+          <!-- Key Specs -->
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; font-size: 0.9rem;">
+            <span style="background: #ffffff; color: var(--primary-dark); padding: 6px 16px; border-radius: 20px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;">
+              <i class="fas fa-file-pdf" style="color: #e74c3c;"></i> 13 stran v&nbsp;PDF
+            </span>
+            <span style="background: #ffffff; color: var(--primary-dark); padding: 6px 16px; border-radius: 20px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;">
+              <i class="fas fa-download" style="color: var(--accent);"></i> Ihned ke stažení po úhradě
+            </span>
+            <span style="background: #ffffff; color: var(--primary-dark); padding: 6px 16px; border-radius: 20px; font-weight: 700; display: inline-flex; align-items: center; gap: 8px;">
+              <i class="fas fa-user-pen" style="color: var(--primary-dark);"></i> Mgr. Jiřina Jenčíková
+            </span>
+          </div>
+
+          <div>
+            <a href="#koupit-ebook" class="btn btn-accent" style="padding: 16px 36px; font-size: 1.05rem; text-transform: uppercase; box-shadow: var(--shadow-md);">
+              Získat e-book ke stažení
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Demonstration Image (e-book mockup) -->
+        <div style="text-align: center;">
+          <div style="position: relative; display: inline-block; max-width: 360px; width: 100%;">
+            <img src="Obrazky/ebook-mockup.png" alt="Ukázka e-booku Kdo jsem s Automatickou kresbou diagnostickou" style="width: 100%; height: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-lg); border: 2px solid rgba(255, 255, 255, 0.2);">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="section-padding" style="background-color: var(--bg-main);">
+    <div class="container">
+      <div style="max-width: 920px; margin: 0 auto;">
+
+        <!-- Back Link -->
+        <a href="o-kurzech.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 600; text-decoration: none; margin-bottom: 32px;">
+          <i class="fas fa-arrow-left"></i> Zpět na přehled kurzů AKD
+        </a>
+
+        <!-- Intro Card: Why this eBook? (Split Layout with Image) -->
+        <div style="background: #ffffff; border-radius: var(--radius-md); padding: 36px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); margin-bottom: 40px;">
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; align-items: center;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 20px;">
+                <div style="width: 50px; height: 50px; background: rgba(54, 182, 177, 0.12); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0;">
+                  <i class="fas fa-book-open-reader"></i>
+                </div>
+                <div>
+                  <span style="color: var(--accent); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">SAMOOBSLUHA OSOBNÍHO ROZVOJE</span>
+                  <h2 style="color: var(--primary-dark); font-size: 1.4rem; margin: 2px 0 0; font-weight: 700;">Proč je e-book unikátním nástrojem sebereflexe?</h2>
+                </div>
+              </div>
+
+              <div style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
+                <p style="margin-bottom: 16px; max-width: none;">
+                  Můžeme se stokrát rozumově rozhodovat pro určitá řešení, ale v&nbsp;podvědomí zůstávají neviditelné vzorce. Ty zvenčí ovlivňují naše nálady, reagování i&nbsp;rozhodování.
+                </p>
+                <p style="margin-bottom: 20px; max-width: none;">
+                  <strong>Automatická kresba diagnostická metodou J.I.H. ® (AKD)</strong> zviditelňuje to, co vnímáte podvědomě – skrytá přesvědčení, neprožité emoce a&nbsp;vlivy okolí.
+                </p>
+
+                <div style="background: var(--bg-alt); padding: 18px 20px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); font-weight: 600; color: var(--primary-dark); margin-bottom: 0;">
+                  <i class="fas fa-magic" style="color: var(--accent); margin-right: 8px;"></i>
+                  Stanete se sami sobě terapeutem a&nbsp;průvodcem. Hlavním přínosem AKD je rychlé vyčištění a&nbsp;náprava energie přímo v&nbsp;přítomném okamžiku.
+                </div>
+              </div>
+            </div>
+
+            <!-- Image: Pastelky -->
+            <div style="text-align: center; width: 100%;">
+              <img src="Obrazky/patelky-fin.jpeg" alt="Sedm barevných pastelek a papír pro AKD" style="width: 100%; max-width: 100%; height: auto; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Practical Methodology Steps (Krok 1, Krok 2, Krok 3) -->
+        <div style="background: #ffffff; border-radius: var(--radius-md); padding: 36px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); margin-bottom: 40px;">
+          <h3 style="color: var(--primary-dark); font-size: 1.5rem; margin-top: 0; margin-bottom: 24px; font-weight: 700; text-align: center;">
+            Metodika AKD v&nbsp;e-booku krok za krokem
+          </h3>
+
+          <div style="display: grid; gap: 20px;">
+            <!-- Step 1 -->
+            <div style="background: var(--bg-alt); padding: 22px; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+              <span style="background: var(--accent); color: #ffffff; font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; text-transform: uppercase;">KROK 1: PŘIHLAŠOVACÍ INSTRUKCE</span>
+              <h4 style="color: var(--primary-dark); font-size: 1.15rem; margin: 10px 0 8px; font-weight: 700;">Naladění na sebereflexi</h4>
+              <p style="margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                Před každou terapií pronesete přihlašovací instrukce. Kompletní a&nbsp;přesné formulace od autorky Jarky Matuškové naleznete přímo v&nbsp;e-booku.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div style="background: var(--bg-alt); padding: 22px; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+              <span style="background: var(--accent); color: #ffffff; font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; text-transform: uppercase;">KROK 2: AKTIVACE BAREV</span>
+              <h4 style="color: var(--primary-dark); font-size: 1.15rem; margin: 10px 0 8px; font-weight: 700;">Nastavení významu 7&nbsp;pastelek</h4>
+              <p style="margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                Každé ze&nbsp;7&nbsp;barev přiřadíte její přesný význam a&nbsp;emoci podle metodiky J.I.H. ®.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div style="background: var(--bg-alt); padding: 22px; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+              <span style="background: var(--accent); color: #ffffff; font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; text-transform: uppercase;">KROK 3: PRAXE KRESBY A&nbsp;ČIŠTĚNÍ</span>
+              <h4 style="color: var(--primary-dark); font-size: 1.15rem; margin: 10px 0 8px; font-weight: 700;">Kresba bez kontroly rozumu</h4>
+              <p style="margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                Nakreslíte dvě postavičky (JÁ a&nbsp;zkoumané téma), provedete zklidňující třídechou meditaci a&nbsp;nechte pastelky volně kreslit. Po zaznamenání reakcí uvolníte energii hnědou pastelkou pro dosažení trvalého vnitřního klidu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- System of Guidance Questions -->
+        <div style="background: #ffffff; border-radius: var(--radius-md); padding: 36px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); margin-bottom: 40px;">
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 20px;">
+            <div style="width: 48px; height: 48px; background: rgba(54, 182, 177, 0.12); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">
+              <i class="fas fa-clipboard-question"></i>
+            </div>
+            <div>
+              <span style="color: var(--accent); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">KLÍČOVÁ METODIKA</span>
+              <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin: 2px 0 0; font-weight: 700;">
+                Návodné otázky metody J.I.H. ® v&nbsp;e-booku
+              </h3>
+            </div>
+          </div>
+
+          <p style="font-size: 1.02rem; line-height: 1.65; color: var(--text-main); margin-bottom: 24px; max-width: none;">
+            E-book obsahuje podrobný systém otázek od Jiřinky, které vás spolehlivě navedou k&nbsp;podstatě problému:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+            
+            <div style="background: var(--bg-alt); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+              <strong style="color: var(--primary-dark); display: block; margin-bottom: 6px;">Čí je to energie?</strong>
+              <span style="font-size: 0.95rem; color: var(--text-main); display: block;">
+                Ega, rozumu, rodiny, partnera, dětí či kolegů z&nbsp;práce.
+              </span>
+            </div>
+
+            <div style="background: var(--bg-alt); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+              <strong style="color: var(--primary-dark); display: block; margin-bottom: 6px;">Co to je za postoj?</strong>
+              <span style="font-size: 0.95rem; color: var(--text-main); display: block;">
+                Zvyk, naučený princip, rodinné pravidlo či obranná reakce.
+              </span>
+            </div>
+
+            <div style="background: var(--bg-alt); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+              <strong style="color: var(--primary-dark); display: block; margin-bottom: 6px;">Čeho se to týká?</strong>
+              <span style="font-size: 0.95rem; color: var(--text-main); display: block;">
+                Tělesného zdraví, mysli, minulosti či obav z&nbsp;budoucnosti.
+              </span>
+            </div>
+
+            <div style="background: var(--bg-alt); padding: 18px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+              <strong style="color: var(--primary-dark); display: block; margin-bottom: 6px;">Kam směřuji pozornost?</strong>
+              <span style="font-size: 0.95rem; color: var(--text-main); display: block;">
+                Do problému a&nbsp;nedostatku, nebo do hledání řešení a&nbsp;klidu.
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Prominent 4 Training Blocks Container -->
+        <div style="background: linear-gradient(135deg, #1B5E5B, #247D79); border-radius: var(--radius-lg); padding: 40px 32px; box-shadow: var(--shadow-lg); color: #ffffff; margin-bottom: 40px;">
+          <div style="text-align: center; margin-bottom: 28px;">
+            <span style="background: rgba(255, 255, 255, 0.15); color: #ffffff; padding: 6px 18px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;">
+              NÁPLŇ E-BOOKU
+            </span>
+            <h3 style="color: #ffffff; font-size: clamp(1.4rem, 3vw, 1.8rem); font-weight: 700; margin-top: 12px; margin-bottom: 8px;">
+              Obsah 4 tréninků sebepoznání v&nbsp;e-booku:
+            </h3>
+            <p style="color: var(--accent-light); font-size: 1rem; max-width: 620px; margin: 0 auto;">
+              Praktický průvodce seberozvojem – krok za krokem k&nbsp;vašemu trvalému posunu.
+            </p>
+          </div>
+
+          <div style="display: grid; gap: 20px;">
+
+            <!-- Block 1 -->
+            <div style="background: #ffffff; color: var(--text-main); padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);">
+              <h4 style="color: var(--primary-dark); font-size: 1.2rem; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 12px;">
+                <span style="background: var(--accent); color: #ffffff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; flex-shrink: 0;">1</span>
+                TRÉNINK 1: POSTOJ K&nbsp;SOBĚ
+              </h4>
+              <p style="margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                <strong>Kdo a&nbsp;co mě formuje?</strong> Zjistíte, jak rodina a&nbsp;společnost utvářejí vaše vzorce. Přijmete odpovědnost za svůj život a&nbsp;naučíte se měnit postoj k&nbsp;sobě bez sebevyčítání.
+              </p>
+            </div>
+
+            <!-- Block 2 -->
+            <div style="background: #ffffff; color: var(--text-main); padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);">
+              <h4 style="color: var(--primary-dark); font-size: 1.2rem; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 12px;">
+                <span style="background: var(--accent); color: #ffffff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; flex-shrink: 0;">2</span>
+                TRÉNINK 2: VNITŘNÍ PŘEKÁŽKY
+              </h4>
+              <p style="margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                <strong>Vina, trest a&nbsp;vnitřní limity.</strong> Rozpoznáte přesvědčení „nejde mi to“, odložíte naučené masky a&nbsp;strachy a&nbsp;přestanete se trestat kritikou.
+              </p>
+            </div>
+
+            <!-- Block 3 -->
+            <div style="background: #ffffff; color: var(--text-main); padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);">
+              <h4 style="color: var(--primary-dark); font-size: 1.2rem; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 12px;">
+                <span style="background: var(--accent); color: #ffffff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; flex-shrink: 0;">3</span>
+                TRÉNINK 3: PRAVDA A&nbsp;ŽIVOTNÍ ZÁKONY
+              </h4>
+              <p style="margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                <strong>Definice vlastní vnitřní pravdy.</strong> Odhalíte skryté programy řídící vaše rozhodnutí a&nbsp;oddělíte to, co vám slouží, od toho, co vás vyčerpává.
+              </p>
+            </div>
+
+            <!-- Block 4 -->
+            <div style="background: #ffffff; color: var(--text-main); padding: 24px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color);">
+              <h4 style="color: var(--primary-dark); font-size: 1.2rem; margin-bottom: 10px; font-weight: 700; display: flex; align-items: center; gap: 12px;">
+                <span style="background: var(--accent); color: #ffffff; width: 32px; height: 32px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 700; flex-shrink: 0;">4</span>
+                TRÉNINK 4: SEBEPŘIJETÍ A&nbsp;VNITŘNÍ KLID
+              </h4>
+              <p style="margin: 0; font-size: 1rem; line-height: 1.65; color: var(--text-main); max-width: none;">
+                <strong>Síla přijetí a&nbsp;nový vnitřní dialog.</strong> Změníte vnímání z&nbsp;„to nejde“ na „jak by to mohlo jít?“ a&nbsp;ukotvíte v&nbsp;sobě trvalou lehkost a&nbsp;vnitřní klid.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Section: Autorka Mgr. Jiřina Jenčíková (With Image & Link to O mně) -->
+        <div style="background: #ffffff; border-radius: var(--radius-md); padding: 36px; border: 1px solid var(--border-color); box-shadow: var(--shadow-sm); margin-bottom: 40px;">
+          
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; align-items: center;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 20px;">
+                <div style="width: 48px; height: 48px; background: rgba(54, 182, 177, 0.12); color: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0;">
+                  <i class="fas fa-user-graduate"></i>
+                </div>
+                <div>
+                  <span style="color: var(--accent); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">AUTORKA E-BOOKU</span>
+                  <h3 style="color: var(--primary-dark); font-size: 1.4rem; margin: 2px 0 0; font-weight: 700;">Mgr. Jiřina Jenčíková</h3>
+                </div>
+              </div>
+
+              <div style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
+                <p style="margin-bottom: 20px; max-width: none;">
+                  Jsem lektorka a&nbsp;průvodkyně rozvojem sebepojetí, civilním povoláním majitelka autoškoly a&nbsp;vystudovaná právnička. Na své osobní i&nbsp;duchovní cestě se nerozvíjím teorii, ale vlastními prožitky a&nbsp;převzetím plné odpovědnosti za svůj život.
+                </p>
+                <div>
+                  <a href="o-mne.html" class="btn btn-primary">Více o&nbsp;Jiřince</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Author Image -->
+            <div style="text-align: center; position: relative;">
+              <img src="Obrazky/jirina.png" alt="Mgr. Jiřina Jenčíková" style="width: 100%; max-width: 320px; height: auto; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- SimpleShop Checkout Section -->
+        <div id="koupit-ebook" style="background: #ffffff; border-radius: var(--radius-lg); padding: 40px 32px; border: 2px solid var(--accent); box-shadow: var(--shadow-lg); margin-bottom: 40px;">
+          <div style="text-align: center; margin-bottom: 28px;">
+            <span style="background: var(--accent); color: #ffffff; font-size: 0.85rem; font-weight: 700; padding: 6px 18px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px;">
+              OBJEDNÁVKA E-BOOKU
+            </span>
+            <h3 style="color: var(--primary-dark); font-size: clamp(1.5rem, 3.2vw, 2rem); margin: 12px 0 8px; font-weight: 700;">
+              Získejte e-book „Kdo jsem“ ihned ke stažení
+            </h3>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin: 0 auto; max-width: 600px;">
+              Vyplňte objednávkový formulář níže. Po dokončení a&nbsp;úhradě vám e-book v&nbsp;PDF dorazí okamžitě do vašeho e-mailu.
+            </p>
+          </div>
+
+          <!-- SimpleShop Form Integration -->
+          <div style="max-width: 680px; margin: 0 auto;">
+            <!-- www.SimpleShop.cz form#115591 start -->
+            <div data-SimpleShopForm="Wraln"><div>Prodejní formulář je vytvořen v&nbsp;systému <a href="https://www.simpleshop.cz/?utm_source=simpleshop&utm_medium=form&utm_campaign=33255" target="_blank">SimpleShop.cz</a>.</div></div>
+            <script>
+             (function(i, s, o, g, r, a, m){
+              i[r] = i[r] || function(){
+               (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date();
+              a = s.createElement(o),
+              m = s.getElementsByTagName(o)[0];
+              a.async = 1;
+              a.src = g;
+              m.parentNode.insertBefore(a, m)
+             })(window, document, "script", "https://form.simpleshop.cz/prj/js/SimpleShopService.js", "sss");
+             sss("createForm", "Wraln");
+            </script>
+            <!-- www.SimpleShop.cz form#115591 end -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="logo" style="margin-bottom: var(--space-4);">
+            <div class="logo-badge">HM</div>
+            <span>HOJIVÉ MÍSTEČKO</span>
+          </div>
+          <p style="font-size: 0.88rem; margin-bottom: 12px; line-height: 1.6;">
+            Kurz „Kdo jsem“ je duševním majetkem firmy JM-občansko-správní poradenství. Firma JM občansko-správní poradenství je organizátorem kurzu rozvoje sebepojetí „Kdo jsem“ Automatickou kresbou diagnostickou metodou JIH®.
+          </p>
+          <p style="font-size: 0.88rem; line-height: 1.6;">
+            Firma JM občansko-správní poradenství spol. s&nbsp;r.o. mimo jiné šíří laické veřejnosti znalosti právního světa formou, která je snadno srozumitelná a&nbsp;oblíbená, na stránkách <a href="https://www.obcansko-spravni.cz" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: underline;">www.obcansko-spravni.cz</a> a&nbsp;<a href="https://www.ridicipokuty.cz" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: underline;">www.ridicipokuty.cz</a>.
+          </p>
+        </div>
+
+        <div>
+          <h4>Fakturační údaje organizátora</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6;">
+            <strong>JM občansko-správní poradenství spol. s&nbsp;r.o.</strong><br>
+            Sídlo: Na Černém vršku 559, Beroun<br>
+            IČO: 119 49 334<br>
+            Zapsaná v&nbsp;OR vedeného Městským soudem v&nbsp;Praze, oddíl C, vložka 356852.<br>
+            Živnostenské oprávnění pro poradenskou a&nbsp;konzultační činnost, pořádání kurzů, školení včetně lektorské činnosti.<br><br>
+            Číslo účtu: <strong>246123895/0600</strong>
+          </p>
+        </div>
+
+        <div>
+          <h4>Kontakt & Odkazy</h4>
+          <p style="font-size: 0.88rem; margin-bottom: 12px; line-height: 1.8;">
+            <strong>Mgr. Jiřina Jenčíková</strong><br>
+            <a href="mailto:jirinamerglova@seznam.cz" style="color: #ffffff; text-decoration: underline;">jirinamerglova@seznam.cz</a><br>
+            <a href="tel:+420607581660" style="color: #ffffff; text-decoration: underline;">+420 607 581 660</a>
+          </p>
+          <ul class="footer-links" style="margin-top: 12px;">
+            <li><a href="https://www.obcansko-spravni.cz" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: underline;">www.obcansko-spravni.cz</a></li>
+            <li><a href="https://www.ridicipokuty.cz" target="_blank" rel="noopener" style="color: #ffffff; text-decoration: underline;">www.ridicipokuty.cz</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Mgr. Jiřina Jenčíková – JM občansko-správní poradenství spol. s&nbsp;r.o.<br>Všechna práva vyhrazena.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

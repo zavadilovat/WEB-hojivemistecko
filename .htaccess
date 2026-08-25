@@ -1,0 +1,27 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# 1. Security Headers
+<IfModule mod_headers.c>
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Content-Type-Options "nosniff"
+    Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    Header set Permissions-Policy "microphone=(), camera=(), geolocation=()"
+</IfModule>
+
+# 2. Custom 404 Error Page
+ErrorDocument 404 /404.html
+
+# 3. Redirect WWW to NON-WWW (Canonical Domain hojivemistecko.cz)
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# 4. Redirect explicit .html extension to Clean URL (301 Redirect)
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# 5. Rewrite Clean URLs internally to .html files
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
