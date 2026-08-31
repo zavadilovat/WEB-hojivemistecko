@@ -30,8 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (dropdownToggle && dropdownParent) {
       dropdownToggle.addEventListener('click', (e) => {
         if (window.innerWidth <= 991) {
-          e.preventDefault();
-          dropdownParent.classList.toggle('open');
+          if (!dropdownParent.classList.contains('open')) {
+            e.preventDefault();
+            dropdownParent.classList.add('open');
+          }
         }
       });
     }

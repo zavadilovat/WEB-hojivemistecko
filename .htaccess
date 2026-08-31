@@ -17,11 +17,18 @@ ErrorDocument 404 /404.html
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 
-# 4. Redirect explicit .html extension to Clean URL (301 Redirect)
+# 4. Redirect index / index.html to Root /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /(index|index\.html)\ HTTP/ [NC]
+RewriteRule ^(index|index\.html)$ / [R=301,L]
+
+# 5. Redirect old /sluzby to /o-kurzech
+RewriteRule ^sluzby(\.html)?$ /o-kurzech [R=301,L]
+
+# 6. Redirect explicit .html extension to Clean URL (301 Redirect)
 RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
 RewriteRule ^ /%1 [R=301,L]
 
-# 5. Rewrite Clean URLs internally to .html files
+# 7. Rewrite Clean URLs internally to .html files
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]

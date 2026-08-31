@@ -78,9 +78,9 @@
 ## HOME (Úvodní stránka) – Pořadí sekcí:
 
 1. **Hero sekce – obrázek:** `Obrazky/patelky-fin.jpeg`
-2. **Sekce: Moje kurzy (hned za Hero)**
-3. **Sekce: Co je to AKD?**
-4. **Sekce: Tento kurz není pro vás, pokud:**
+2. **Sekce: IRONIE – S čím si lidé pletou osobní rozvoj?** (4 varovné body + tyrkysová karta)
+3. **Sekce: Moje kurzy** (Karty 3 kurzů)
+4. **Sekce: Co je to AKD?**
 5. **Sekce: Kde kurzy probíhají?** (Adresa: Na Černém vršku 559, Beroun s apartmá, kuchyňkou, terasou, parkováním a stravováním + fotka budovy)
 6. **Sekce: O mně**
 7. **Sekce: Kontakt & Právní údaje**

@@ -1,6 +1,6 @@
 # Hojivé Místečko – Mgr. Jiřina Jenčíková
 
-> Kurz rozvoje sebepojetí „Kdo jsem“ automatickou kresbou diagnostickou metodou JIH® (Jemná Informační Harmonie) a osobní konzultace v Berouně.
+> Kurzy rozvoje sebepojetí „Kdo jsem“ automatickou kresbou diagnostickou (AKD) metodou J.I.H.® a osobní rozvojové provázení v Berouně.
 
 ## Klíčové informace
 - Lektorka: Mgr. Jiřina Jenčíková (Vaše Jiřinka)
@@ -10,7 +10,11 @@
 - Číslo účtu: 246123895/0600
 
 ## Hlavní stránky
-- / - Hlavní prezentace Hojivého Místečka a přehled služeb
-- /sluzby - Detailní informace o kurzech a osobnách konzultacích
-- /o-mne - Příběh a etický kodex Mgr. Jiřiny Jenčíkové
-- /kontakt - Kontaktní formulář a objednávky
+- / - Úvodní prezentace Hojivého Místečka a přehled kurzů
+- /o-kurzech - Podrobné informace o kurzech rozvoje sebepojetí s AKD
+- /kurz-zacatecnici - Kurz pro začátečníky „Kdo jsem“ s AKD
+- /kurz-pokrocili - Osobní rozvoj pro pokročilé s AKD
+- /kurz-osobni-vedeni - Kurz „Kdo jsem“ – osobní vedení
+- /ebook - Prodejní stránka pro e-book „Kdo jsem“ s AKD
+- /o-mne - Příběh a životní cesta Mgr. Jiřiny Jenčíkové
+- /kontakt - Kontaktní formulář a rezervace kurzů
