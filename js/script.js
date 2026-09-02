@@ -97,15 +97,56 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 4. Formspree Contact Form Validation & Honeypot
+  // 4. Formspree Contact Form Submission with AJAX & Redirection
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
       const hpField = contactForm.querySelector('input[name="website"]');
       if (hpField && hpField.value !== '') {
         // Spam bot detected!
-        e.preventDefault();
         return false;
+      }
+
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn ? submitBtn.innerHTML : 'ODESLAT ZPRÁVU';
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right: 8px;"></i> Odesílám...';
+      }
+
+      try {
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          window.location.href = 'dekuji';
+        } else {
+          const data = await response.json();
+          let errorMessage = 'Při odesílání formuláře došlo k chybě. Zkuste to prosím znovu.';
+          if (data && data.errors && data.errors.length > 0) {
+            errorMessage = data.errors.map(err => err.message).join(', ');
+          }
+          alert(errorMessage);
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+          }
+        }
+      } catch (error) {
+        alert('Došlo k chybě připojení. Zkontrolujte prosím připojení k internetu nebo nám napište přímo na e-mail.');
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+        }
       }
     });
   }
