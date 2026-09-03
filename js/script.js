@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 4. Formspree Contact Form Submission with AJAX & Redirection
+  // 4. Contact Form Submission (odeslat.php) with AJAX & Redirection
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
@@ -128,11 +128,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (response.ok) {
-          window.location.href = 'dekuji';
+          const data = await response.json().catch(() => null);
+          const targetUrl = (data && data.redirect) ? data.redirect : 'dekuji';
+          window.location.href = targetUrl;
         } else {
-          const data = await response.json();
+          const data = await response.json().catch(() => null);
           let errorMessage = 'Při odesílání formuláře došlo k chybě. Zkuste to prosím znovu.';
-          if (data && data.errors && data.errors.length > 0) {
+          if (data && data.error) {
+            errorMessage = data.error;
+          } else if (data && data.errors && data.errors.length > 0) {
             errorMessage = data.errors.map(err => err.message).join(', ');
           }
           alert(errorMessage);

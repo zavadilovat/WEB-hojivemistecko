@@ -125,12 +125,11 @@
           </p>
         </div>
 
-        <!-- Formspree Contact Form -->
+        <!-- Contact Form -->
         <div>
           <h3 style="margin-bottom: var(--space-5); color: var(--primary-dark);">Kontaktní formulář</h3>
-          <form id="contactForm" action="https://formspree.io/f/mbgjgrdl" method="POST">
-            <!-- Formspree Redirect & Honeypot -->
-            <input type="hidden" name="_next" value="https://hojivemistecko.cz/dekuji">
+          <form id="contactForm" action="odeslat.php" method="POST">
+            <!-- Honeypot ochrana proti spamu -->
             <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off">
 
             <div class="form-group">
