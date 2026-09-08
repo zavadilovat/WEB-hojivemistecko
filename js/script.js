@@ -97,60 +97,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 4. Contact Form Submission (odeslat.php) with AJAX & Redirection
+  // 4. Contact Form (FormSubmit) Anti-Spam & Button State
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-
-      const hpField = contactForm.querySelector('input[name="website"]');
-      if (hpField && hpField.value !== '') {
+    contactForm.addEventListener('submit', (e) => {
+      const hp1 = contactForm.querySelector('input[name="_honey"]');
+      const hp2 = contactForm.querySelector('input[name="website"]');
+      if ((hp1 && hp1.value !== '') || (hp2 && hp2.value !== '')) {
         // Spam bot detected!
+        e.preventDefault();
         return false;
       }
 
       const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const originalBtnText = submitBtn ? submitBtn.innerHTML : 'ODESLAT ZPRÁVU';
-
       if (submitBtn) {
-        submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" style="margin-right: 8px;"></i> Odesílám...';
-      }
-
-      try {
-        const formData = new FormData(contactForm);
-        const response = await fetch(contactForm.action, {
-          method: 'POST',
-          body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
-        });
-
-        if (response.ok) {
-          const data = await response.json().catch(() => null);
-          const targetUrl = (data && data.redirect) ? data.redirect : 'dekuji';
-          window.location.href = targetUrl;
-        } else {
-          const data = await response.json().catch(() => null);
-          let errorMessage = 'Při odesílání formuláře došlo k chybě. Zkuste to prosím znovu.';
-          if (data && data.error) {
-            errorMessage = data.error;
-          } else if (data && data.errors && data.errors.length > 0) {
-            errorMessage = data.errors.map(err => err.message).join(', ');
-          }
-          alert(errorMessage);
-          if (submitBtn) {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = originalBtnText;
-          }
-        }
-      } catch (error) {
-        alert('Došlo k chybě připojení. Zkontrolujte prosím připojení k internetu nebo nám napište přímo na e-mail.');
-        if (submitBtn) {
-          submitBtn.disabled = false;
-          submitBtn.innerHTML = originalBtnText;
-        }
       }
     });
   }

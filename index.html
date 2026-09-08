@@ -416,10 +416,22 @@
           </div>
         </div>
 
-        <!-- Contact Form -->
+        <!-- Contact Form (FormSubmit) -->
         <div>
-          <form id="contactForm" action="odeslat.php" method="POST">
-            <!-- Honeypot ochrana proti spamu -->
+          <form id="contactForm" action="https://formsubmit.co/jirinamerglova@seznam.cz" method="POST">
+            <!-- Přesměrování na děkovnou stránku -->
+            <input type="hidden" name="_next" value="https://hojivemistecko.cz/dekuji">
+
+            <!-- Testovací kopie (po otestování lze smazat) -->
+            <input type="hidden" name="_cc" value="zavadilova.t@gmail.com">
+
+            <!-- Nastavení odesílání -->
+            <input type="hidden" name="_subject" value="Nová zpráva z webu Hojivé Místečko">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            <!-- Ochrana proti spamu (Honeypot) -->
+            <input type="text" name="_honey" style="display:none">
             <input type="text" name="website" class="hp-field" tabindex="-1" autocomplete="off">
 
             <div class="form-group">
