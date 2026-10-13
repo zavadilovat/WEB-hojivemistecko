@@ -1,0 +1,38 @@
+# Nahraje web na WEDOS (hojivemistecko.cz) přes FTP po každém odeslání na GitHub.
+# Přihlašovací údaje jsou v GitHubu: Settings → Secrets and variables → Actions
+# (WEDOS_FTP_SERVER, WEDOS_FTP_USER, WEDOS_FTP_PASSWORD).
+name: Nasazení na WEDOS
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-wedos
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      FTP_SERVER: ${{ secrets.WEDOS_FTP_SERVER }}
+    steps:
+      - uses: actions/checkout@v4
+
+      # Dokud nejsou vyplněné FTP údaje, nahrávání se tiše přeskočí.
+      - name: Nahrání přes FTP
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ env.FTP_SERVER }}
+          username: ${{ secrets.WEDOS_FTP_USER }}
+          password: ${{ secrets.WEDOS_FTP_PASSWORD }}
+          protocol: ftps
+          server-dir: /www/domains/hojivemistecko.cz/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            .github/**
+            **/.DS_Store
+            instrukce.md
