@@ -18,3 +18,5 @@
 - /ebook - Prodejní stránka pro e-book „Kdo jsem“ s AKD
 - /o-mne - Příběh a životní cesta Mgr. Jiřiny Jenčíkové
 - /kontakt - Kontaktní formulář a rezervace kurzů
+- /Prilohy/obchodni-podminky.pdf - Všeobecné obchodní podmínky (VOP)
+- /Prilohy/ochrana-osobnich-udaju.pdf - Zásady ochrany osobních údajů (GDPR)

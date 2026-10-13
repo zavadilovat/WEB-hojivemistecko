@@ -865,6 +865,31 @@ img {
   width: 100%;
 }
 
+.footer-legal-links {
+  margin-bottom: 12px !important;
+  font-size: 0.92rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.footer-legal-links a {
+  color: #ffffff !important;
+  text-decoration: underline;
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
+}
+
+.footer-legal-links a:hover {
+  opacity: 0.75 !important;
+}
+
+.footer-legal-links .sep {
+  opacity: 0.5;
+}
+
 /* Cookie Bar */
 .cookie-bar {
   position: fixed;
@@ -964,3 +989,4 @@ img {
     display: block;
   }
 }
+

@@ -81,7 +81,7 @@
 2. **Sekce: IRONIE – S čím si lidé pletou osobní rozvoj?** (4 varovné body + tyrkysová karta)
 3. **Sekce: Moje kurzy** (Karty 3 kurzů)
 4. **Sekce: Co je to AKD?**
-5. **Sekce: Kde kurzy probíhají?** (Adresa: Na Černém vršku 559, Beroun s apartmá, kuchyňkou, terasou, parkováním a stravováním + fotka budovy)
+5. **Sekce: Kde kurzy probíhají?** (Adresa: Na Černém vršku 559, Beroun s apartmá, kuchyňkou, terasou, parkováním a stravováním – 3 přehledné karty zázemí bez fotografie budovy)
 6. **Sekce: O mně**
 7. **Sekce: Kontakt & Právní údaje**
 
@@ -93,3 +93,6 @@
 * **E-mail:** [jirinamerglova@seznam.cz](mailto:jirinamerglova@seznam.cz)
 * **Telefon:** [+420 607 581 660](tel:+420607581660)
 * **Místo konání kurzů:** Na Černém vršku 559, Beroun
+* **Právní dokumenty v patičce:**
+  * Všeobecné obchodní podmínky (VOP): `Prilohy/obchodni-podminky.pdf` (alias `/vop`)
+  * Zásady ochrany osobních údajů (GDPR): `Prilohy/ochrana-osobnich-udaju.pdf` (alias `/gdpr`)
