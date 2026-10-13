@@ -13,6 +13,14 @@ RewriteEngine On
 # 2. Custom 404 Error Page
 ErrorDocument 404 /404.html
 
+# 2b. Block hidden files (e.g. .ftp-deploy-sync-state.json), keep .well-known for SSL
+RewriteRule (^|/)\.(?!well-known/) - [F,L]
+
+# 2c. Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 # 3. Redirect WWW to NON-WWW (Canonical Domain hojivemistecko.cz)
 RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
 RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
