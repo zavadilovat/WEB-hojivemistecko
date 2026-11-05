@@ -590,14 +590,14 @@ img {
 /* Section 5: "O MNE" (About Jiřina) */
 .about-split {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-7);
   align-items: center;
 }
 
 @media (min-width: 992px) {
   .about-split {
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   }
 }
 
@@ -606,10 +606,16 @@ img {
   text-align: center;
 }
 
+/* Decorative blobs must not cause sideways scrolling on phones (iOS ignores body overflow-x) */
+section {
+  overflow-x: clip;
+}
+
 .about-photo {
   position: relative;
   z-index: 2;
   border-radius: var(--radius-lg);
+  width: 100%;
   max-width: 440px;
   margin: 0 auto;
   box-shadow: var(--shadow-lg);
@@ -719,13 +725,13 @@ img {
 /* Contact & Form Section */
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-7);
 }
 
 @media (min-width: 992px) {
   .contact-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 }
 
