@@ -916,6 +916,13 @@ section {
   border: 1px solid var(--border-dark);
 }
 
+.cookie-bar p {
+  color: #ffffff;
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
 .cookie-bar.hidden {
   display: none;
 }
